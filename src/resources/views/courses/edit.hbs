@@ -1,0 +1,38 @@
+<div class="mt-4">
+    <h3>Cap nhat khoa hoc</h3>
+
+    <form class="mt-4" method="post" action="/courses/{{course._id}}?_method=PUT">
+        <div class="mb-3">
+            <label for="name" >Ten khoa hoc</label>
+            <input type="text" class="form-control" value="{{course.name}}" id="name" name="name">
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="description" >Mo ta khoa hoc</label>
+            <textarea class="form-control"  id="description" name="description">{{course.description}}</textarea>
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="videoId" >video mo ta</label>
+            <input type="text" class="form-control" value="{{course.videoId}}" id="videoId" name="videoId">
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="level" >trinh do</label>
+            <input type="text" class="form-control" value="{{course.level}}" id="level" name="level">
+            
+        </div>
+
+        <div class="mb-3">
+            <label for="image" >hinh anh</label>
+            <input type="text" class="form-control" value="{{course.image}}" id="image" name="image">
+            
+        </div>
+       
+        <button type="submit" class="btn btn-primary">Luu lai</button>
+        </form>
+
+</div>

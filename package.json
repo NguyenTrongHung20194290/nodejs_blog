@@ -1,0 +1,43 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write package.json '{src/**/*.js'",
+    "start": "nodemon --inspect src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch src/resources/scss --output src/public/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NguyenTrongHung20194290/nodejs_blog.git"
+  },
+
+
+  "keywords": [
+    "nodejs",
+    "test"
+  ],
+  "author": "hung",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "jquery": "^3.6.1",
+    "method": "^2.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.5.3",
+    "mongoose-delete": "^0.5.4",
+    "mongoose-slug-generator": "^1.0.4",
+    "override": "^0.0.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1"
+  },
+  "description": ""
+}
